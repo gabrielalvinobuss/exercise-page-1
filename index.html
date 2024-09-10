@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: transparent;
+            width: 1440px;
+            margin: 0 auto;
+        }
+
+        .logo-header {
+            display: flex;
+            width: 154.49px;
+            height: 24px;
+            padding-left: 104px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .flex-grid {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-button-bar {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            height: 24px;
+            flex: 1;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .login-signup {
+            display: flex;
+            height: 40px;
+            padding-top: 23px;
+            padding-right: 120px;
+            padding-bottom: 20px;
+            gap: 14px;
+            white-space: nowrap;
+        }
+
+        .small-transparent-button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: transparent;
+            color: #4CAF4F;
+        }
+
+        .small-rounded-green-button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #4CAF4F;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .container-text-banner {
+            padding-top: 161.5px;
+            padding-bottom: 161.5px;
+            padding-right: 104px;
+            padding-left: 144px;
+            width: 657px;
+            height: 276px;
+        }
+
+        .image-banner1 {
+            justify-content: flex-end;
+            width: 391px;
+            height: 407px;
+            padding-top: 96px;
+            padding-bottom: 96px;
+            padding-right: 144px;
+        }
+
+        .banner-gray-text {
+            color: #4D4D4D;
+            font-size: 64px;
+            line-height: 76px;
+            font-weight: 600;
+        }
+
+        .green-text {
+            color: #4CAF4F;
+        }
+
+        .small-text-padding-top-16 {
+            color: #717171;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            padding-top: 16px;
+        }
+
+        .medium-rounded-green-button {
+            margin-top: 32px;
+            padding: 14px 32px;
+            cursor: pointer;
+            background-color: #4CAF4F;
+            border-radius: 6px;
+            color: white;
+            display: inline-block;
+        }
+
+        .large-text {
+            font-size: 36px;
+            line-height: 44px;
+            color: #4D4D4D;
+            font-weight: 600;
+        }
+
+        .text-centralized {
+            text-align: center;
+        }
+
+        .padding-top-40 {
+            padding-top: 40px;
+        }
+
+        .padding-top-16 {
+            padding-top: 16px;
+        }
+
+        .small-text-padding-top-8 {
+            color: #717171;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            padding-top: 8px;
+        }
+
+        .clients-grid {
+            gap: 136px;
+            justify-content: center;
+            display: flex;
+            width: 1152px;
+            height: 98px;
+            padding-top: 16px;
+            padding-left: 144px;
+            padding-right: 144px;
+        }
+
+        .clients-logo {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .text-box-community-section {
+            width: 543px;
+            height: 88px;
+            margin: 0 auto;
+        }
+
+        .group-system-items {
+            width: 299px;
+            height: 260px;
+            display: flex;
+            gap: 127.5px;
+            margin-left: 144px;
+            margin-right: 144px;
+            align-items: center;
+        }
+
+        .group-system-items h1 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            text-align: center;
+            color: #4D4D4D;
+            width: 267px;
+            height: 72px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .group-system-items h5 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #717171;
+            padding-top: 8px;
+            padding-right: 24px;
+            padding-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .group-system-image {
+            width: 65px;
+            height: 56px;
+            padding-left: 117px;
+            padding-right: 117px;
+            padding-bottom: 16px;
+            padding-top: 24px;
+        }
+
+        .group-system-items .h5-group-system-center {
+            width: 240px;
+        }
+
+        .group-system-items .h1-group-system-right {
+            width: 231px;
+            height: 72px;
+            padding-left: 34px;
+            padding-right: 34px;
+        }
+
+        .box-shadow-group-system {
+            box-shadow: 0px 2px 4px #ABBED1;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+
+        .image-banner2 {
+            justify-content: flex-start;
+            width: 442px;
+            height: 433px;
+            padding-top: 41px;
+            padding-bottom: 48px;
+            padding-left: 144px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            color: #4D4D4D;
+        }
+
+        h5 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #717171;
+        }
+
+        .box-banner2-text {
+            padding: 0 0 0 49px;
+            width: 601px;
+        }
+
+        .box-achievements {
+            justify-content: center;
+            padding-bottom: 64px;
+            padding-top: 64px;
+            gap: 72px;
+        }
+
+        .achievements-box-left-text {
+            width: 540px;
+            height: 120px;
+        }
+
+        .box-achievements h5 {
+            color: #18191F;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+        }
+
+        .flex-grid.box-achievements .flex-grid {
+            gap: 16px;
+        }
+
+        .flex-grid.box-achievements .flex-grid h5 {
+            padding-top: 0px;
+            color: #717171;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 36px;
+            color: #4D4D4D;
+        }
+
+        .achievements-data {
+            display: flex;
+            width: 540px;
+            flex-flow: wrap;
+        }
+
+        .achievements-infos {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 255px;
+        }
+
+        .flex-grid.box-achievements .flex-grid.achievements-data {
+            gap: 30px;
+        }
+
+        .image-banner3 {
+            justify-content: flex-start;
+            width: 441.53px;
+            height: 433.4px;
+            padding-bottom: 48px;
+            padding-left: 144px;
+        }
+
+        .box-banner3-text {
+            padding: 0 0 0 49.47px;
+            width: 601px;
+        }
+
+        .small-text-grey {
+            color: #717171;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .image-banner4 {
+            justify-content: flex-start;
+            width: 326px;
+            height: 326px;
+            padding-left: 144px;
+            padding-right: 78px;
+        }
+
+        .box-banner4-text {
+            width: 748px;
+            height: 168px;
+            align-content: flex-start;
+            display: inline-table;
+        }
+
+        .box-banner4-text h3 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .box-banner4-text h2 {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        .box-banner4-text .small-text-grey {
+            font-weight: 400;
+            color: #89939E;
+        }
+
+        .medium-grey {
+            color: #717171;
+        }
+
+        .padding-top-8 {
+            padding-top: 8px;
+        }
+
+        .padding-bottom-48 {
+            padding-bottom: 48px;
+        }
+
+        .padding-top-48 {
+            padding-top: 48px;
+        }
+
+        .padding-top-32px {
+            padding-top: 32px;
+        }
+
+        .padding-bottom-32px {
+            padding-bottom: 32px;
+        }
+
+        .customer-grid {
+            gap: 41px;
+            display: flex;
+            width: 493px;
+            height: 48px;
+            padding-top: 32px;
+            padding-right: 32px;
+        }
+
+        .customer-logo {
+            padding-bottom: 33px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .customer-button {
+            width: 223px;
+            height: 44px;
+            text-wrap: nowrap;
+        }
+
+        .customer-button h2 {
+            padding-top: 0px;
+        }
+
+        .customer-button-box {
+            padding: 8px 8px 8px 8px;
+        }
+
+        .background-grey {
+            background-color: #F5F7FA;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-grid background-grey">
+        <div>
+            <img class="logo-header" src="assets/logo.svg" />
+        </div>
+        <div class="flex-grid menu-button-bar">
+            <div class="cursor-pointer">
+                Home
+            </div>
+            <div class="cursor-pointer">
+                Service
+            </div>
+            <div class="cursor-pointer">
+                Feature
+            </div>
+            <div class="cursor-pointer">
+                Product
+            </div>
+            <div class="cursor-pointer">
+                Testimonial
+            </div>
+            <div class="cursor-pointer">
+                FAQ
+            </div>
+        </div>
+        <div class="login-signup">
+            <div class="small-transparent-button">
+                Login
+            </div>
+            <div class="small-rounded-green-button">
+                Sign up
+            </div>
+        </div>
+    </div>
+    <div class="flex-grid background-grey">
+        <div class="container-text-banner">
+            <p class="banner-gray-text">Lessons and insights</p>
+            <p class="green-text banner-gray-text">from 8 years</p>
+            <p class="small-text-padding-top-16">Where to grow your business as a photographer: site or social media?
+            </p>
+            <div class="medium-rounded-green-button">
+                Register
+            </div>
+        </div>
+        <div class="image-banner1">
+            <img src="assets/banner-image.svg" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <p class="large-text text-centralized padding-top-40">Our Clients</p>
+            <p class="small-text-padding-top-8 text-centralized">We have been working with some Fortune 500+ clients</p>
+        </div>
+        <div class="clients-grid">
+            <div>
+                <img class="clients-logo" src="assets/client-logo1.svg" />
+            </div>
+            <div>
+                <img class="clients-logo" src="assets/client-logo2.svg" />
+            </div>
+            <div>
+                <img class="clients-logo" src="assets/client-logo3.svg" />
+            </div>
+            <div>
+                <img class="clients-logo" src="assets/client-logo4.svg" />
+            </div>
+            <div>
+                <img class="clients-logo" src="assets/client-logo5.svg" />
+            </div>
+            <div>
+                <img class="clients-logo" src="assets/client-logo6.svg" />
+            </div>
+            <div>
+                <img class="clients-logo" src="assets/client-logo7.svg" />
+            </div>
+        </div>
+        <div>
+            <div class="large-text padding-top-40 text-box-community-section text-centralized">Manage your entire
+                community in a single system</div>
+            <p class="small-text-padding-top-8 text-centralized">Who is Nextcent suitable for?</p>
+        </div>
+        <div class="flex-grid padding-top-16">
+            <div class="group-system-items">
+                <div class="box-shadow-group-system">
+                    <img class="group-system-image" src="assets/group-system1.svg">
+                    <h1>Membership Organisations</h1>
+                    <h5>Our membership management software provides full automation of membership renewals and payments
+                    </h5>
+                </div>
+                <div class="box-shadow-group-system">
+                    <img class="group-system-image" src="assets/group-system2.svg">
+                    <h1>National Associations</h1>
+                    <h5 class="h5-group-system-center">Our membership management software provides full automation of
+                        membership renewals and payments
+                    </h5>
+                </div>
+                <div class="box-shadow-group-system">
+                    <img class="group-system-image" src="assets/group-system3.svg">
+                    <h1 class="h1-group-system-right">Clubs And Groups</h1>
+                    <h5>Our membership management software provides full automation of membership renewals and payments
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-grid">
+        <div class="image-banner2">
+            <img src="assets/banner2-image.svg" />
+        </div>
+        <div class="box-banner2-text">
+            <h1>The unseen of spending three years at Pixelgrade</h1>
+            <h5 class="padding-top-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo
+                ipsum. Sed accumsan quam
+                vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique
+                iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae,
+                tempus sem. Donec elementum pulvinar odio.</h5>
+            <div class="medium-rounded-green-button">
+                Learn More
+            </div>
+        </div>
+    </div>
+    <div class="flex-grid box-achievements background-grey">
+        <div class="achievements-box-left-text">
+            <h1>Helping a local</h1>
+            <h1 class="green-text">business reinvent itself</h1>
+            <h5 class="small-text-padding-top-8">We reached here with our hard work and dedication
+            </h5>
+        </div>
+
+        <div class="flex-grid achievements-data">
+            <div class="achievements-infos">
+                <div>
+                    <img class="icon" src="assets/achievements-icon1.svg" />
+                </div>
+                <div>
+                    <h2>2,245,341</h2>
+                    <h5 class="small-text-padding-top-8">Members</h5>
+                </div>
+            </div>
+            <div class="achievements-infos">
+                <div>
+                    <img class="icon" src="assets/achievements-icon2.svg" />
+                </div>
+                <div>
+                    <h2>46,328</h2>
+                    <h5 class="small-text-padding-top-8">Clubs</h5>
+                </div>
+            </div>
+            <div class="achievements-infos">
+                <div>
+                    <img class="icon" src="assets/achievements-icon3.svg" />
+                </div>
+                <div>
+                    <h2>828,867</h2>
+                    <h5 class="small-text-padding-top-8">Event Bookings</h5>
+                </div>
+            </div>
+            <div class="achievements-infos">
+                <div>
+                    <img class="icon" src="assets/achievements-icon4.svg" />
+                </div>
+                <div>
+                    <h2>1,926,436</h2>
+                    <h5 class="small-text-padding-top-8">Payments</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="flex-grid padding-bottom-48 padding-top-48">
+        <div class="image-banner3">
+            <img src="assets/banner3-image.svg" />
+        </div>
+        <div class="box-banner3-text">
+            <h1>How to design your site footer like we did</h1>
+            <h5 class="padding-top-16">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec
+                tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero
+                ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis
+                finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
+                commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis
+                libero. Donec consectetur faucibus ipsum id gravida.</h5>
+            <div class="medium-rounded-green-button">
+                Learn More
+            </div>
+        </div>
+    </div>
+    <div class="flex-grid background-grey padding-bottom-32px padding-top-32px">
+        <div class="image-banner4">
+            <img src="assets/banner4-image.png" />
+        </div>
+        <div class="box-banner4-text">
+            <h3 class="medium-grey">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui,
+                vel rutrum risus
+                tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim.
+                Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi
+                blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget
+                lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat
+                ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh
+                id sem dignissim finibus ac sit amet magna.</h3>
+            <h2 class="green-text padding-top-16">Tim Smith</h2>
+            <h3 class="small-text-grey padding-top-8">British Dragon Boat Racing Association</h3>
+            <div class="customer-grid">
+                <div>
+                    <img class="customer-logo" src="assets/customer-logo-1.svg" />
+                </div>
+                <div>
+                    <img class="customer-logo" src="assets/client-logo2.svg" />
+                </div>
+                <div>
+                    <img class="customer-logo" src="assets/client-logo3.svg" />
+                </div>
+                <div>
+                    <img class="customer-logo" src="assets/client-logo4.svg" />
+                </div>
+                <div>
+                    <img class="customer-logo" src="assets/client-logo5.svg" />
+                </div>
+                <div>
+                    <img class="customer-logo" src="assets/client-logo6.svg" />
+                </div>
+                <div class=" flex-grid customer-button cursor-pointer">
+                    <div class="customer-button-box">
+                        <h2 class="green-text padding-top-16">Meet all customers</h2>
+
+                    </div>
+                    <div>
+                        <img src="assets/arrow-right.svg" />
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+
+
+</html>
